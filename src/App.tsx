@@ -1,6 +1,5 @@
-import React from 'react';
 import myImage from './assets/image.jpeg';  // Assuming your image is imported correctly
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar.tsx';
 
 // Assuming Navbar is correctly imported (make sure Navbar is updated with anchor tags)
 function App() {
