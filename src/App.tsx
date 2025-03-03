@@ -14,7 +14,16 @@ function App() {
         </div>
         <div className="text">
           <h1>My works</h1>
-          <p>This is a description of what the website is about. You can add more information here to introduce your content to the users.</p>
+          <div className="Projects">
+            <div className="Project">
+              <h2>Music Trend Analyser</h2>
+              <p>Music Trend Analyser is an application that analyses the world's music trends.</p>
+            </div>
+            <div className="Project">
+              <h2>Project 2</h2>
+              <p>Project 2 description</p>
+            </div>
+          </div>
         </div>
       </section>
       

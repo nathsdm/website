@@ -57,11 +57,11 @@ nav ul li a:hover {
   display: flex;             /* Enable flexbox layout */
   justify-content: space-between; /* Space out the image and text */
   align-items: center;       /* Align items vertically in the center */
-  padding: 50px;             /* Optional: Add padding around the section */
+  padding: 30px;             /* Optional: Add padding around the section */
 }
 
 #home img {
-  width: 100%;                /* Make image take 50% of the container's width */
+  width: 100%;                /* Make image take 100% of the container's width */
   height: auto;              /* Keep the image aspect ratio */
   object-fit: cover;         /* Optional: Ensure the image fits well within the box */
 }
@@ -69,6 +69,11 @@ nav ul li a:hover {
 #home .text {
   width: 50%;                /* Make the text take 50% of the container's width */
   padding-left: 20px;        /* Optional: Add some space between text and image */
+}
+
+#home .Projects {
+  display: flex;             /* Enable flexbox layout */
+  justify-content: space-between; /* Space out the projects */
 }
 
 h1 {
