@@ -1,25 +1,42 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './Navbar';  // Assuming Navbar is correctly imported
 import myImage from './assets/image.jpeg';  // Assuming your image is imported correctly
+import Navbar from './components/Navbar';
 
+// Assuming Navbar is correctly imported (make sure Navbar is updated with anchor tags)
 function App() {
   return (
-    <Router>
-      <div>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<div>Home Page</div>} />
-          <Route path="/about" element={<div>About Page</div>} />
-          <Route path="/services" element={<div>Services Page</div>} />
-          <Route path="/contact" element={<div>Contact Page</div>} />
-        </Routes>
-        <div>
-          <h1>Welcome to my website!</h1>
-          <img src={myImage} alt="A description of the image" style={{ width: '50%', height: 'auto' }} />
+    <div>
+      <Navbar /> {/* This component should have links with href="#section-id" */}
+      
+      {/* Home Section */}
+      <section id="home">
+        <div className="image">
+          <img src={myImage} alt="A description of the image" />
         </div>
-      </div>
-    </Router>
+        <div className="text">
+          <h1>My works</h1>
+          <p>This is a description of what the website is about. You can add more information here to introduce your content to the users.</p>
+        </div>
+      </section>
+      
+      {/* About Section */}
+      <section id="about">
+        <h2>About</h2>
+        <p>This is the About section.</p>
+      </section>
+
+      {/* Services Section */}
+      <section id="services">
+        <h2>Services</h2>
+        <p>This is the Services section.</p>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>This is the Contact section.</p>
+      </section>
+    </div>
   );
 }
 
