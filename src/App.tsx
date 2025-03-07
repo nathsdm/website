@@ -1,5 +1,6 @@
-import myImage from './assets/image.jpeg';  // Assuming your image is imported correctly
+import billboard from './assets/billboard.jpg';
 import Navbar from './components/Navbar.tsx';
+import ImageSlider from './components/ImageSlider.tsx';
 
 // Assuming Navbar is correctly imported (make sure Navbar is updated with anchor tags)
 function App() {
@@ -10,14 +11,15 @@ function App() {
       {/* Home Section */}
       <section id="home">
         <div className="image">
-          <img src={myImage} alt="A description of the image" />
+          <ImageSlider />
         </div>
         <div className="text">
           <h1>My works</h1>
           <div className="Projects">
             <div className="Project">
               <h2>Music Trend Analyser</h2>
-              <p>Music Trend Analyser is an application that analyses the world's music trends.</p>
+              <p>Music Trend Analyser is an application that analyses the world's music trends. It's based on multiple data sources including the top 200 Billboard.</p>
+              <img src={billboard} alt="Billboard" />
             </div>
             <div className="Project">
               <h2>Project 2</h2>
